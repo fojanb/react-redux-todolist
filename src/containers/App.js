@@ -10,16 +10,19 @@ function App() {
   };
   return (
     <div className="App">
+      <h2>My To-Do-List</h2>
       <div className="wrapper">
-        <input className="bar"
+        <input
+          className="bar"
           onChange={(e) =>
             dispatch({ type: "NEW_ITEM", EVENT: e.target.value })
           }
         ></input>
-        <button className="addBtn"onClick={addNewTask}>Add</button>
+        <button className="addBtn" onClick={addNewTask}>
+          Add
+        </button>
       </div>
       <div className="tasks"></div>
-
     </div>
   );
 }
