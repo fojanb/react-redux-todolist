@@ -1,6 +1,6 @@
-import addReducer from "./addReducer";
+import addDeleteReducer from "./addDeleteReducer";
 import { combineReducers } from "redux";
 const allReducers = combineReducers({
-  state1: addReducer,
+  state1: addDeleteReducer,
 });
 export default allReducers;
