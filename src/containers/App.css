@@ -90,9 +90,7 @@ h2 > span {
   color: #1d4e89;
   background-color: #87d4db;
 }
-.deleteBtn:hover{
+.deleteBtn:hover {
   background-color: #58cfac;
   transition: 0.4s ease-out;
-
-
 }
