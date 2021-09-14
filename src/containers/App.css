@@ -43,6 +43,10 @@
   appearance: none;
   border:none;
   color: aliceblue;
+  cursor: pointer;
+}
+.addBtn:hover{
+  background-color: #255fa5;
 }
 h2{
   color: #1d4e89;
@@ -65,4 +69,19 @@ h2 > span {
   margin:20px auto;
   padding: 10px;
   border:5px solid #deaaff;
+}
+.deleteBtn{
+  background-color: #87d4db;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50px;
+  height:30px;
+  font-size: 10px;
+  margin-left: 10px;
+  appearance: none;
+  border:none;
+  margin: 0 auto;
+  justify-content: center;
+
+
 }
