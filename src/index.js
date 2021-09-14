@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 
 ReactDOM.render(
   <React.StrictMode>
+    <h2>My To-Do-List</h2>
     <Provider store={store}>
       <App />
     </Provider>
