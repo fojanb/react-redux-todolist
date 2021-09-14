@@ -4,21 +4,23 @@ function App() {
   const state1 = useSelector((state) => state.state1);
   const state2 = useSelector((state) => state.state2);
   const dispatch = useDispatch();
+  const addNewTask = () => {
+    console.log(state2);
+  };
   return (
     <div className="App">
       <div>
         <input
           onChange={(e) =>
-            dispatch({ type: "Item is added", EVENT: e.target.value })
+            dispatch({ type: "NEW_ITEM", EVENT: e.target.value })
           }
         ></input>
-        <button onClick={() => dispatch({ type: "newToDo" })}>
-          Add new task
-        </button>
+        <button onClick={addNewTask}>Add new task</button>
+        <div className="tasks"></div>
       </div>
 
-      <button onClick={() => dispatch({ type: "ADD_ITEM" })}>+</button>
-      <button onClick={() => dispatch({ type: "DELETE_ITEM" })}>-</button>
+      <button onClick={() => dispatch({ type: "INC" })}>+</button>
+      <button onClick={() => dispatch({ type: "DEC" })}>-</button>
       {state1}
     </div>
   );
