@@ -5,6 +5,8 @@ function App() {
   const dispatch = useDispatch();
   const addNewTask = () => {
     let newTask = document.createElement("div");
+    let deleteBtn = document.createElement("button");
+    newTask.insertAdjacentElement("beforeend",deleteBtn);
     newTask.classList.add("task");
     newTask.innerText = state1;
     document.querySelector(".tasks").appendChild(newTask);
