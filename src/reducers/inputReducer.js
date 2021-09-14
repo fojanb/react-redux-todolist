@@ -1,5 +1,5 @@
 const inputReducer = (state = '',action)=>{
-    if(action.type === "Item is added"){
+    if(action.type === "NEW_ITEM"){
         state = action.EVENT;
     }
     return state;
