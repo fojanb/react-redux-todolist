@@ -6,11 +6,11 @@ function App() {
   const dispatch = useDispatch();
   const inputHandler = (e) => {
     e.preventDefault();
-    console.log(e.target.value);
+    let data = e.target.value;
   };
   return (
     <div className="App">
-      <input onChange={inputHandler}></input>
+      <input onChange={() => dispatch({type : "Item is added."})}></input>
       <button onClick={() => dispatch({ type: "ADD_ITEM" })}>ADD ITEM</button>
       <button onClick={() => dispatch({ type: "DELETE_ITEM" })}>DELETE ITEM</button>
 
