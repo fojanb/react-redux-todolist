@@ -7,15 +7,20 @@ function App() {
     let newTask = document.createElement("div");
     let deleteBtn = document.createElement("button");
     deleteBtn.classList.add("deleteBtn");
-    deleteBtn.innerText="Remove"
+    deleteBtn.innerText = "Remove";
+    deleteBtn.addEventListener("click", () => {
+      newTask.style.display = "none";
+    });
     newTask.classList.add("task");
     newTask.innerText = state1;
-    newTask.insertAdjacentElement("beforeend",deleteBtn);
+    newTask.insertAdjacentElement("beforeend", deleteBtn);
     document.querySelector(".tasks").appendChild(newTask);
   };
   return (
     <div className="App">
-      <h2><span>✎</span> My To-Do-List</h2>
+      <h2>
+        <span>✎</span> My To-Do-List
+      </h2>
       <div className="wrapper">
         <input
           className="bar"
