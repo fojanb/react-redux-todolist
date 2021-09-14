@@ -1,7 +1,10 @@
-const inputReducer = (state = '',action)=>{
-    if(action.type === "NEW_ITEM"){
-        state = action.EVENT;
-    }
-    return state;
-}
+const inputReducer = (state = "", action) => {
+  if (action.type === "ADD_ITEM") {
+    state = action.DATA;
+  }
+  else {
+    state = "";
+  }
+  return state;
+};
 export default inputReducer;
