@@ -5,13 +5,13 @@ function App() {
   const dispatch = useDispatch();
   const addNewTask = () => {
     let newTask = document.createElement("div");
-    let deleteBtn = document.createElement("button");
-    deleteBtn.classList.add("deleteBtn");
-    deleteBtn.innerText = "Remove";
-    deleteBtn.addEventListener("click", dispatch({ type: "REMOVE_ITEM" }));
+    let removeBtn = document.createElement("button");
+    removeBtn.classList.add("removeBtn");
+    removeBtn.innerText = "Remove";
+    // removeBtn.addEventListener("click", dispatch({ type: "REMOVE_ITEM" }));
     newTask.classList.add("task");
     newTask.innerText = state1;
-    newTask.insertAdjacentElement("beforeend", deleteBtn);
+    newTask.insertAdjacentElement("beforeend", removeBtn);
     document.querySelector(".tasks").appendChild(newTask);
   };
   return (
