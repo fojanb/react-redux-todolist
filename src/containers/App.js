@@ -1,15 +1,9 @@
 import "./App.css";
 import { useSelector, useDispatch } from "react-redux";
-
 function App() {
   const state1 = useSelector((state) => state.state1);
   const state2 = useSelector((state) => state.state2);
-
   const dispatch = useDispatch();
-  // const inputHandler = (e) => {
-  //   e.preventDefault();
-  //   let data = e.target.value;
-  // };
   return (
     <div className="App">
       <div>
@@ -29,5 +23,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
