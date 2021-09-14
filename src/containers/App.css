@@ -7,26 +7,25 @@
   height: auto;
   border: 5px solid #58cfac;
   border-radius: 10px;
-  margin:20px auto;
+  margin: 20px auto;
   padding-bottom: 50px;
 }
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.bar{
+.bar {
   background-color: #8de6cb;
   border-radius: 10px;
-  width:35%;
-  height:40px;
+  width: 35%;
+  height: 40px;
   font-size: 20px;
   appearance: none;
-  border:none;
-
+  border: none;
 }
-.bar:focus{
+.bar:focus {
   display: block;
   background: none;
   appearance: none;
@@ -34,28 +33,25 @@
   outline: none;
   background-color: #9de7d1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-
-
 }
-.addBtn{
+.addBtn {
   background-color: #43aa8b;
   border-radius: 10px;
-  width:100px;
-  height:40px;
-  font-size: 20px;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
   margin-left: 20px;
   appearance: none;
-  border:none;
+  border: none;
   color: #1d4e89;
   cursor: pointer;
   font-weight: bolder;
   transition: 0.4s ease-out;
-
 }
-.addBtn:hover{
+.addBtn:hover {
   background-color: #58cfac;
 }
-h2{
+h2 {
   color: #1d4e89;
   margin: 50px auto;
   text-align: center;
@@ -64,28 +60,40 @@ h2{
 h2 > span {
   color: #860f9e;
 }
-.task{
+.task {
   display: flex;
   position: relative;
-  width:50%;
-  height:20px;
+  width: 50%;
+  height: 20px;
+  justify-content: space-between;
   background-color: #52b788;
   text-align: left;
   border-radius: 10px;
   color: #1d4e89;
-  margin:20px auto;
+  margin: 20px auto;
   padding: 10px;
 }
-.deleteBtn{
-  background-color: #87d4db;
+.deleteBtn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   cursor: pointer;
   border-radius: 5px;
   width: 50px;
-  height:30px;
+  height: 20px;
   font-size: 10px;
+  font-weight: bolder;
   margin-left: 10px;
   appearance: none;
-  border:none;
+  border: none;
   margin: 0 auto;
-  justify-content: center;
+  color: #1d4e89;
+  background-color: #87d4db;
+}
+.deleteBtn:hover{
+  background-color: #58cfac;
+  transition: 0.4s ease-out;
+
+
 }
