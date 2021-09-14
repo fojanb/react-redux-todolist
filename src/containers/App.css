@@ -46,11 +46,14 @@
   margin-left: 20px;
   appearance: none;
   border:none;
-  color: aliceblue;
+  color: #1d4e89;
   cursor: pointer;
+  font-weight: bolder;
+  transition: 0.4s ease-out;
+
 }
 .addBtn:hover{
-  background-color: #255fa5;
+  background-color: #a0c4ff;
 }
 h2{
   color: #1d4e89;
