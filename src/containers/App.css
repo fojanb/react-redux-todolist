@@ -26,9 +26,12 @@
   border:none;
 }
 .bar:focus{
+  display: block;
+  background: none;
   appearance: none;
-  border:none;
-  background-color: #fdc78a;
+  border: none;
+  outline: none;
+  background-color: #f8d8b4;
 }
 .addBtn{
   background-color: #1d4e89;
@@ -46,4 +49,21 @@ h2{
   margin: 50px auto;
   text-align: center;
   font-weight: bolder;
+}
+h2 > span {
+  color: #f86624;
+}
+.task{
+  display: flex;
+  width:320px;
+  height:20px;
+  background-color: #f1e48b;
+  text-align: left;
+  border-radius: 10px;
+  color: #1d4e89;
+  margin:20px auto;
+  padding: 10px;
+  border:5px solid #deaaff;
+
+
 }
