@@ -6,9 +6,11 @@ function App() {
   const addNewTask = () => {
     let newTask = document.createElement("div");
     let deleteBtn = document.createElement("button");
-    newTask.insertAdjacentElement("beforeend",deleteBtn);
+    deleteBtn.classList.add("deleteBtn");
+    deleteBtn.innerText="✘"
     newTask.classList.add("task");
     newTask.innerText = state1;
+    newTask.insertAdjacentElement("beforeend",deleteBtn);
     document.querySelector(".tasks").appendChild(newTask);
   };
   return (
