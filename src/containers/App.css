@@ -3,7 +3,7 @@
   color: rgb(100, 100, 243);
   background-color: #7dcfb6;
   font-weight: bolder;
-  width: 100%;
+  width: 50%;
   height: auto;
   border: 10px solid #00b2ca;
   border-radius: 10px;
@@ -55,7 +55,8 @@ h2 > span {
 }
 .task{
   display: flex;
-  width:320px;
+  position: relative;
+  width:50%;
   height:20px;
   background-color: #f1e48b;
   text-align: left;
