@@ -8,12 +8,7 @@ function App() {
     let deleteBtn = document.createElement("button");
     deleteBtn.classList.add("deleteBtn");
     deleteBtn.innerText = "Remove";
-    deleteBtn.addEventListener(
-      "click",
-
-      dispatch({ type: "REMOVE_ITEM"})
-      // newTask.style.display = "none";
-    );
+    deleteBtn.addEventListener("click", dispatch({ type: "REMOVE_ITEM" }));
     newTask.classList.add("task");
     newTask.innerText = state1;
     newTask.insertAdjacentElement("beforeend", deleteBtn);
@@ -25,7 +20,8 @@ function App() {
         <span>✎</span> My To-Do-List
       </h2>
       <div className="wrapper">
-        <input value={state1}
+        <input
+          value={state1}
           className="bar"
           onChange={(e) => dispatch({ type: "ADD_ITEM", DATA: e.target.value })}
         ></input>
