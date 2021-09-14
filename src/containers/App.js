@@ -8,7 +8,7 @@ function App() {
     let removeBtn = document.createElement("button");
     removeBtn.classList.add("removeBtn");
     removeBtn.innerText = "Remove";
-    // removeBtn.addEventListener("click", dispatch({ type: "REMOVE_ITEM" }));
+    removeBtn.addEventListener("click", dispatch({ type: "REMOVE_ITEM" }));
     newTask.classList.add("task");
     newTask.innerText = state1;
     newTask.insertAdjacentElement("beforeend", removeBtn);
