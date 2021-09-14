@@ -7,7 +7,7 @@ function App() {
     let newTask = document.createElement("div");
     let deleteBtn = document.createElement("button");
     deleteBtn.classList.add("deleteBtn");
-    deleteBtn.innerText="✘"
+    deleteBtn.innerText="Remove"
     newTask.classList.add("task");
     newTask.innerText = state1;
     newTask.insertAdjacentElement("beforeend",deleteBtn);
