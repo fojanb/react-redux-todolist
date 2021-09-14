@@ -3,4 +3,26 @@
   color: rgb(100, 100, 243);
   font-weight: bolder;
 }
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
+}
+.bar{
+  background-color: bisque;
+  border-radius: 10px;
+  width:25%;
+  height:40px;
+  font-size: 25px;
+}
+.addBtn{
+  background-color: rgb(149, 214, 245);
+  border-radius: 10px;
+  width:100px;
+  height:40px;
+  font-size: 25px;
+  margin-left: 20px;
+
+}
