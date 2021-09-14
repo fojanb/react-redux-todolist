@@ -1,28 +1,49 @@
 .App {
   text-align: center;
   color: rgb(100, 100, 243);
+  background-color: #7dcfb6;
   font-weight: bolder;
+  width: 30%;
+  height: auto;
+  border: 10px solid #00b2ca;
+  border-radius: 10px;
+  margin:20px auto;
+  padding-bottom: 50px;
 }
 .wrapper{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
 }
 .bar{
-  background-color: bisque;
+  background-color: #fbd1a2;
   border-radius: 10px;
-  width:25%;
+  width:50%;
   height:40px;
-  font-size: 25px;
+  font-size: 20px;
+  appearance: none;
+  border:none;
+}
+.bar:focus{
+  appearance: none;
+  border:none;
+  background-color: #fdc78a;
 }
 .addBtn{
-  background-color: rgb(149, 214, 245);
+  background-color: #1d4e89;
   border-radius: 10px;
   width:100px;
   height:40px;
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 20px;
-
+  appearance: none;
+  border:none;
+  color: aliceblue;
+}
+h2{
+  color: #1d4e89;
+  margin: 50px auto;
+  text-align: center;
+  font-weight: bolder;
 }
