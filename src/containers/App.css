@@ -3,7 +3,7 @@
   color: rgb(100, 100, 243);
   background-color: #7dcfb6;
   font-weight: bolder;
-  width: 30%;
+  width: 100%;
   height: auto;
   border: 10px solid #00b2ca;
   border-radius: 10px;
@@ -51,7 +51,7 @@ h2{
   font-weight: bolder;
 }
 h2 > span {
-  color: #f86624;
+  color: #c24207;
 }
 .task{
   display: flex;
