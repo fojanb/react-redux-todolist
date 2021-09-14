@@ -5,12 +5,13 @@ function App() {
   const dispatch = useDispatch();
   const addNewTask = () => {
     let newTask = document.createElement("div");
+    newTask.classList.add("task");
     newTask.innerText = state1;
     document.querySelector(".tasks").appendChild(newTask);
   };
   return (
     <div className="App">
-      <h2>My To-Do-List</h2>
+      <h2><span>✎</span> My To-Do-List</h2>
       <div className="wrapper">
         <input
           className="bar"
