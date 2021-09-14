@@ -7,7 +7,7 @@ const addReducer = (state = 0, action) => {
       state = state - 1;
       break;
     default:
-      console.log("no answer");
+      return state;
   }
   return state;
 };
