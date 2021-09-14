@@ -5,7 +5,10 @@ function App() {
   const state2 = useSelector((state) => state.state2);
   const dispatch = useDispatch();
   const addNewTask = () => {
-    console.log(state2);
+    let newTask = document.createElement("div");
+    newTask.innerText = state2;
+    document.querySelector(".tasks").appendChild(newTask);
+    // console.log(state2);
   };
   return (
     <div className="App">
